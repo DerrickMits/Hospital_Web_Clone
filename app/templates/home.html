@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neema Hospital</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="social-media">
+                <a href="#"><img src="{{ url_for('static', filename='images/facebook-icon.png') }}" alt="Facebook"></a>
+                <a href="#"><img src="{{ url_for('static', filename='images/twitter-icon.png') }}" alt="Twitter"></a>
+                <a href="#"><img src="{{ url_for('static', filename='images/instagram-icon.png') }}" alt="Instagram"></a>
+                <a href="#"><img src="{{ url_for('static', filename='images/tiktok-icon.png') }}" alt="TikTok"></a>
+            </div>
+            <div class="logo">
+                <h1>Neema Hospital</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/branches">Branches</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="{{ url_for('static', filename='images/hospital.jpg') }}" alt="Hospital">
+            <a href="/services" class="btn">Our Services</a>
+        </section>
+        <section class="why-choose-us">
+            <h2>Why choose us?</h2>
+            <div class="reasons">
+                <div class="reason">
+                    <img src="{{ url_for('static', filename='images/affordable-icon.png') }}" alt="Affordable Healthcare">
+                    <p>Affordable HealthCare</p>
+                    <p>At Neema, we partner with other medical professionals to ensure you get the best</p>
+                </div>
+                <div class="reason">
+                    <img src="{{ url_for('static', filename='images/dedication-icon.png') }}" alt="Dedication">
+                    <p>Dedication</p>
+                    <p>We are fully dedicated to providing effective and compassionate care to our patients</p>
+                </div>
+            </div>
+        </section>
+        <section class="welcome">
+            <h2>Welcome to Neema Hospital</h2>
+            <p>Neema Hospital is a 500-bed capacity facility located along Mbagathi Road, opposite Kenya Defence Forces headquarters. We offer patient-focused, world-class services at locally affordable rates. At Neema Hospital, we are committed to providing health services to our patients 24/7. We also have other branches in other regions within the country.</p>
+            <a href="#" class="btn">Learn More</a>
+        </section>
+        <section class="visit-us">
+            <h2>Visit Us</h2>
+            <img src="{{ url_for('static', filename='images/hospital-visit.jpg') }}" alt="Hospital Visit">
+            <p>Visiting Hours</p>
+            <p>Morning: 1200HRS to 1400HRS</p>
+            <p>Evening: 1600HRS to 1800HRS</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Neema Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>
