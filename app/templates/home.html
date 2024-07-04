@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neema Hospital</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="social-media">
-                <a href="#"><img src="{{ url_for('static', filename='images/facebook-icon.png') }}" alt="Facebook"></a>
-                <a href="#"><img src="{{ url_for('static', filename='images/twitter-icon.png') }}" alt="Twitter"></a>
-                <a href="#"><img src="{{ url_for('static', filename='images/instagram-icon.png') }}" alt="Instagram"></a>
-                <a href="#"><img src="{{ url_for('static', filename='images/tiktok-icon.png') }}" alt="TikTok"></a>
-            </div>
-            <div class="logo">
-                <h1>Neema Hospital</h1>
-            </div>
-            <ul class="nav-links">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Neema Hospital</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>Neema Hospital</h1>
+                </div>
+                <ul class="nav-links">
                 <li><a href="/">Home</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/branches">Branches</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="/services" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">In patient</a>
+                        <a href="#">Out patient</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="/branches" class="dropbtn">Branches</a>
+                    <div class="dropdown-content">
+                        <a href="#">Mombasa Branch</a>
+                        <a href="#">Kisumu Branch</a>
+                        <a href="#">Nakuru Branch</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="/contact" class="dropbtn">Contact</a>
+                    <div class="dropdown-content">
+                        <a href="#">Frequently asked questions</a>
+                        <a href="#">Reporting misconduct</a>
+                        <a href="#">Suggestions</a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
